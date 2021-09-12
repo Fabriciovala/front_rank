@@ -37,6 +37,8 @@ body {
 
   padding: 30px 170px;
 
+  z-index: 5;
+
   position: fixed;
   top: 0;
   background: #000;
