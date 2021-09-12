@@ -1,0 +1,153 @@
+html,
+body,
+div,
+section,
+main,
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: #23222f;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #23222f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main header {
+  font-size: 1.6rem;
+  width: 100vw;
+  text-align: center;
+
+  padding: 30px 170px;
+
+  position: fixed;
+  top: 0;
+  background: #000;
+}
+
+.main .containerCard {
+  width: 70vw;
+  margin-top: 126px;
+}
+
+.main .containerCard .card {
+  background-color: #4f395c;
+  border-radius: 3px;
+  margin: 10px 0;
+  height: 127px;
+  padding: 10px;
+  min-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main .containerCard .card:hover {
+  transform: translateX(18px);
+  transition: transform 0.3s;
+}
+
+.main .containerCard .card .iconNameUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .containerCard .card .icon {
+  font-size: 56px;
+}
+
+.main .containerCard .card .icon figure img {
+}
+
+.main .containerCard .card .icon .nameUser {
+}
+
+.main .containerCard .card .qtdKata {
+}
+
+.main .containerCard .card .honor {
+}
+
+.main .containerCard .card .honor .score {
+}
+
+.main .footer {
+  padding: 30px 0 40px 0;
+  background-color: #8b0000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main .footer .text {
+  font-size: 20px;
+  padding: 0 40px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#181818, #23222f);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #4f395c;
+  border-radius: 5px;
+}
+
+@media (max-width: 730px) {
+  .main {
+    height: auto;
+  }
+
+  .main .containerCard {
+    width: 91vw;
+    margin-top: 151px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main .containerCard .card {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 730px) {
+  .main .containerCard .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main .containerCard .card .iconNameUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
