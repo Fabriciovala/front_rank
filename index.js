@@ -11,7 +11,6 @@ Promise.all(listObjectAPI).then(arrayList => {
   screenData = arrayList.sort((a, b) => b.honor - a.honor);
 
     const criarCard = (data, index) => {
-      if (index <= 4) {
         const containerCardId = document.querySelector("#containerCardId");
 
         const blockHTML = `
@@ -33,7 +32,6 @@ Promise.all(listObjectAPI).then(arrayList => {
 
         containerCardId.appendChild(div);
       }
-    };
 
     screenData.forEach((element, index) => criarCard(element, index));
 })
