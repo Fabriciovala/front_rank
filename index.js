@@ -16,7 +16,7 @@ Promise.all(listObjectAPI).then(arrayList => {
         const blockHTML = `
           <div class="iconNameUser">
               <div class="icon">${prizeDrawEmoji(index)}</div>
-              <h3 class="nameUser">${data.name}</h3>
+              <h3 class="nameUser">${data.name === "" ? data.username : data.name}</h3>
           </div>
           <p class="qtdKata">QTD de katas: ${
             data.codeChallenges.totalCompleted
